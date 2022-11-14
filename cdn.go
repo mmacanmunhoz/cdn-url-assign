@@ -11,9 +11,9 @@ import (
 )
 
 func main() {
-	keyID := "KS3KEN4NJA2H8"  
-	privKeyPath := "./content-files-key" 
-	url := "https://d1wviyql9igy8r.cloudfront.net/url.txt"  
+	keyID := ""  // GET KEY IN CLOUDFRONT PAINEL, OPTION PUBLIC KEY
+	privKeyPath := "./matheuus-local-privatekey" 
+	url := "https://urlcloudfront/url.txt"  
 	expireAt := time.Now().Add(24 * time.Hour)
     
 	privKey, err := sign.LoadPEMPrivKeyFile(privKeyPath)
